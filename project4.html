@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Primitive Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav id="nav">
+    <ul style="font-family: 'kg';">
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>   
+  </nav>
+  <div class="project-container">
+    <div class="project-text">
+      <h1 style="font-family:'kg';">Primitive Events</h1>
+      <p>This simple task required me to create the basis of a website interface, hosting a variety of event venues people can book.</p>
+      <p><strong>Tools:</strong> VS Code (HTML, CSS, JavaScript), GitHub</p>
+    </div>
+
+    <!-- Right: Image Slider -->
+    <div class="project-slider">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <img id="slider-image" src="images\project4.jpg" alt="Primitive Events">
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    window.sliderImages = [
+      "images\\project4.jpg",
+      "images\\project4_2.jpg",
+      "images\\project4_3.jpg",
+    ];
+  </script>  
+
+  <script src="slider.js"></script>
+  
+</body>
+</html>

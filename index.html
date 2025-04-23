@@ -1,0 +1,115 @@
+<html lang="eng">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intialize-scale=1.0"/>
+    <title>Marsha Arbi</title>
+    <link rel ="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav id="nav">
+        <ul style="font-family: 'kg';">
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>   
+        <button id="music-toggle" title="Toggle Music">Pause Music</button>
+    </nav>
+
+  <center><section id="aboutme" class="section aboutme-section" style="font-family: 'kg';">
+    <div class="aboutme-content">
+      <img src="images\aboutme.png" alt="A photo of Marsha Arbi" class="aboutme-photo">
+    
+    </div>
+  </section></center>
+  <center><section id="aboutme" class="section aboutme-section" style="font-family: 'kg';">
+    <div class="aboutme-content">
+      <img src="images\aboutme2.png" alt="A photo of Marsha Arbi" class="aboutme-photo">
+    
+    </div>
+  </section></center>
+
+    <section id="experience" class="section" style="font-family: 'kg';">
+      <div class="gallery">
+        <a href="project5.html" class="gallery-item">
+          <img src="images/project5.jpg" alt="Project 5">
+          <div class="overlay">Fudo Optic</div>
+        </a>
+        <a href="project2.html" class="gallery-item">
+          <img src="images/project2.jpg" alt="Project 2">
+          <div class="overlay">Geolokasi</div>
+        </a>
+        <a href="project1.html" class="gallery-item">
+          <img src="images/project1.jpg" alt="Project 1">
+          <div class="overlay">Kebuloq</div>
+        </a>
+        <a href="project3.html" class="gallery-item">
+          <img src="images/project3.jpg" alt="Project 3">
+          <div class="overlay">Last Words of Death Row Inmates</div>
+        </a>
+        <a href="project4.html" class="gallery-item">
+          <img src="images/project4.jpg" alt="Project 4">
+          <div class="overlay">Primitive Events</div>
+        </a>
+        <a href="project6.html" class="gallery-item">
+          <img src="images/project6.jpg" alt="Project 6">
+          <div class="overlay">Wattpad Cover Contests</div>
+        </a>
+        <a href="project7.html" class="gallery-item">
+          <img src="images/project7.jpg" alt="Project 7">
+          <div class="overlay">Other</div>
+        </a>
+        <a href="project8.html" class="gallery-item">
+          <img src="images\project8.jpg" alt="Project 8">
+          <div class="overlay">Certifications</div>
+        </a>
+        <a href="project9.html" class="gallery-item">
+          <img src="images\project9.jpg" alt="Project 8">
+          <div class="overlay">CS Comot</div>
+        </a>
+    </div>
+    </section>
+    <section id="contact" class="section">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mqapoown" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" style="font-family: 'kg'; font-size: large;">Send</button>
+        </form>
+      </div>
+    </section>
+    
+        
+    
+    <script src="script.js"></script>
+
+    <audio id="bg-music" loop autoplay>
+      <source src="revolusielegi.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+      const music = document.getElementById("bg-music");
+      const toggleBtn = document.getElementById("music-toggle");
+    
+      toggleBtn.addEventListener("click", () => {
+        if (music.paused) {
+          music.play();
+          toggleBtn.textContent = "Pause Music";
+        } else {
+          music.pause();
+          toggleBtn.textContent = "Play Music";
+        }
+      });
+    
+      window.addEventListener("DOMContentLoaded", () => {
+        toggleBtn.textContent = music.paused ? "Play Music" : "Pause Music";
+      });
+    </script>
+  
+  <footer style="text-align:center; padding: 1em; font-family: 'kg'; font-size: large;">
+    &copy; 2025 Marsha Arbi. All rights reserved.
+  </footer>
+
+</body>

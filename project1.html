@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kebuloq</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav id="nav" style="margin-bottom: 90px;">
+    <ul style="font-family: 'kg';">
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>   
+  </nav>
+
+  <div class="project-container">
+    <div class="project-text">
+      <h1 style="font-family:'kg';">Kebuloq</h1>
+      <p>I was assigned to create a simple interface that could attract beginners in cooking. The fun things were definitely the added streak counter & character customizations! I also had to promote the mock application on Instagram & TikTok with posts as creative as they could be.</p>
+      <p><strong>App Development Tools:</strong> Figma, MIT App Inventor</p>
+      <p><strong>Posting Tools:</strong> Phonto, Canva, YouCut </p>
+    </div>
+
+    <!-- Right: Image Slider -->
+    <div class="project-slider">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <img id="slider-image" src="images\project1.jpg" alt="Kebuloq">
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    window.sliderImages = [
+      "images\\project1.jpg",
+      "images\\project1_1.jpg",
+      "images\\project1_2.jpg",
+      "images\\project1_3.jpg",
+      "images\\project1_4.jpg"
+    ];
+  </script>  
+
+  <script src="slider.js"></script>
+  
+</body>
+</html>

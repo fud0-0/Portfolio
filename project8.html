@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav id="nav">
+    <ul style="font-family: 'kg';">
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>   
+  </nav>
+  <div class="project-container">
+    <div class="project-text">
+      <h1 style="font-family:'kg';">Certifications</h1>
+      <p>Receiving these pieces of paper offers glimpses of what society deems as achievements. To me, these represent an eminently small fraction of my life. 
+        Although, I dare say that getting voted for the quietest kid in primary school and the most underrrated kid of my last year of high school were quite the accolades.
+      </p>
+      <p><strong>Tools:</strong> Photoshop, Dafont.com, Canva</p>
+    </div>
+
+    <!-- Right: Image Slider -->
+    <div class="project-slider">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <img id="slider-image" src="images\\sijil7.jpg" alt="Other">
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    window.sliderImages = [
+      "images\\sijil7.jpg",
+      "images\\sijil5.jpg",
+      "images\\sijil1.jpg",
+      "images\\sijil4.jpg",
+      "images\\sijil6.jpg",
+      "images\\sijil2.jpg",
+      "images\\sijil3.jpg",
+    ];
+  </script>  
+
+  <script src="slider.js"></script>
+  
+</body>
+</html>

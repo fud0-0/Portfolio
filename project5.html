@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fudo Optic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav id="nav">
+    <ul style="font-family: 'kg';">
+        <li><a href="index.htm#experience">Experience</a></li>
+        <li><a href="index.htm#about">About Me</a></li>
+        <li><a href="index.htm#contact">Contact</a></li>
+    </ul>   
+  </nav>
+  <div class="project-container">
+    <div class="project-text">
+      <h1 style="font-family:'kg';">Fudo Optic</h1>
+      <p>I picked the name <i>Fudo</i> from the anime Devilman Crybaby, a Japanese word that refers to a Buddhist deity who symbolizes resilience. Optic refers to the visuals. Post Covid, around the age of 15, I started this as a passion project with no particular aim but to showcase stories of well-deserved places, thoughts and people. They are conveyed visually, verbally and acoustically. </p>
+      <p><strong>Photographing Tools:</strong> Olympus EP 5, iPhone 5, Galaxy A35</p>
+      <p><strong>Editing Tools:</strong> Snapseed, VSCO, Kuji Film, Samsung Gallery, Apple Photos, Phonto, Dafont.com</p>
+      <p>Click <a href="https://www.instagram.com/fudoptic/" style="color: aqua;">here</a> to go to the account.</p> 
+    </div>
+
+    <!-- Right: Image Slider -->
+    <div class="project-slider">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <img id="slider-image" src="images\project5.jpg" alt="Fudo Optic">
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    window.sliderImages = [
+      "images\\project5.jpg",
+      "images\\project5_1.jpg",
+      "images\\project5_2.jpg",
+      "images\\project5_3.jpg",
+      "images\\project5_4.jpg",
+      "images\\project5_5.jpg",
+      "images\\project5_6.jpg",
+      "images\\project5_7.jpg",
+    ];
+  </script>  
+
+  <script src="slider.js"></script>
+  
+</body>
+</html>

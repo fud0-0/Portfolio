@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS Comot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav id="nav">
+    <ul style="font-family: 'kg';">
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>   
+  </nav>
+  <div class="project-container">
+    <div class="project-text">
+      <h1 style="font-family:'kg';">CS Comot</h1>
+      <p>At the end of our Diploma, as I saw potential in deepening our relationship, I decided to open an Instagram account that would document our last months together.</p>
+      <p><strong>Tools:</strong>Paper, Pen, Pencil, Canva</p>
+    </div>
+
+    <!-- Right: Image Slider -->
+    <div class="project-slider">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <img id="slider-image" src="images\project9.jpg" alt="CS Comot">
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    window.sliderImages = [
+      "images\\project9_1.jpg",
+      "images\\project9_2.jpg",
+      "images\\project9_3.jpg",
+      "images\\project9_4.jpg",
+      "images\\project9_5.jpg",
+      "images\\project9_8.jpg",
+      "images\\project9_6.jpg",
+      "images\\project9_7.jpg",
+    ];
+  </script>  
+
+  <script src="slider.js"></script>
+  
+</body>
+</html>

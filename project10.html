@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS 6 Beast</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images\\icon.png" type="image/png">
+</head>
+<body>
+  <nav id="nav">
+    <ul style="font-family: 'kg';">
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>   
+  </nav>
+  <div class="project-container">
+    <div class="project-text">
+      <h1 style="font-family:'kg';">CS 6 Beast</h1>
+      <p>In our last semester, each class was assigned to collect funds for a community project. Here, I helped document our efforts. Fun fact, there were 20 boys and only 2 girls in my class!</p>
+      <p><strong>Tools:</strong> Pinterest, Canva</p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/cs6beast/" target="_blank">CS 6 Beast</a></p>
+    </div>
+
+    <!-- Right: Image Slider -->
+    <div class="project-slider">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <img id="slider-image" src="images\project10_1.jpg" alt="CS 6 Beast">
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    window.sliderImages = [
+      "images\\project10_1.jpg",
+      "images\\project10.jpg",
+      "images\\project10_2.jpg",
+      "images\\project10_3.jpg",
+      "images\\project10_4.jpg",
+    ];
+  </script>  
+
+  <script src="slider.js"></script>
+  
+</body>
+</html>

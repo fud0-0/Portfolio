@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS 6 Beast</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images\\icon.png" type="image/png">
+</head>
+<body>
+  <nav id="nav">
+    <ul style="font-family: 'kg';">
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>   
+  </nav>
+  <div class="project-container">
+    <div class="project-text">
+      <h1 style="font-family:'kg';">EPIC Build</h1>
+      <p>From the 13th to the 15th of September 2025, a group of strangers and I came together to help build a house for a family from Simpang Pulai, Perak. I was in floor gang!</p>
+      <p><strong>Tools: Hammer, circular saw, paint roller, screwdriver, level tool and much more!</strong></p>
+    </div>
+
+    <!-- Right: Image Slider -->
+    <div class="project-slider">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <img id="slider-image" src="images\project10_1.jpg" alt="CS 6 Beast">
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    window.sliderImages = [
+      "images\\project11_1.jpg",
+      "images\\project11_2.jpg",
+      "images\\project11_3.jpg",
+      "images\\project11_4.jpg",
+    ];
+  </script>  
+
+  <script src="slider.js"></script>
+  
+</body>
+</html>
